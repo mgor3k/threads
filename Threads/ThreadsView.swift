@@ -11,7 +11,7 @@ struct ThreadsView: View {
                 ForEach(threads) { thread in
                     ThreadView(thread: thread)
                         .padding(.horizontal)
-                        .padding(.vertical)
+                        .padding(.vertical, 6)
 
                     Divider()
                         .overlay {

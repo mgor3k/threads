@@ -42,6 +42,21 @@ struct ThreadView: View {
                 }
 
                 Text(thread.body)
+
+                HStack {
+                    Image(systemName: "bubble.right")
+                    Spacer()
+                    Image(systemName: "arrow.2.squarepath")
+                    Spacer()
+                    Image(systemName: "heart")
+                    Spacer()
+                    Image(systemName: "paperplane")
+                    Spacer()
+                    Image(systemName: "ellipsis")
+                }
+                .font(.caption)
+                .foregroundStyle(.gray)
+                .padding(.top, 8)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
