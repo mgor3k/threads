@@ -4,9 +4,17 @@ import SwiftUI
 
 @main
 struct ThreadsApp: App {
+    let dependencies = Dependencies(
+        imageFetcher: .live(
+            imageCache: .init(),
+            urlSession: .shared
+        )
+    )
+
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environment(\.dependencies, dependencies)
         }
     }
 }

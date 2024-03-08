@@ -19,18 +19,9 @@ struct ThreadView: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            AsyncImage(url: thread.author.imageURL) { phase in
-                switch phase {
-                case .empty:
-                    Color.gray
-                case .success(let image):
-                    image.resizable()
-                case .failure:
-                    Color.red
-                @unknown default:
-                    Color.green
-                }
-            }
+            CachedAsyncImageView(
+                url: thread.author.imageURL
+            )
             .frame(width: 44, height: 44)
             .clipShape(.circle)
 
@@ -82,18 +73,10 @@ struct ThreadView: View {
     var media: some View {
         switch thread.media {
         case .image(let url):
-            AsyncImage(url: url) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                case .success(let image):
-                    image.resizable().scaledToFit()
-                case .failure:
-                    Color.red
-                @unknown default:
-                    Color.red
-                }
-            }
+            CachedAsyncImageView(
+                url: url
+            )
+            .scaledToFit()
             .frame(maxHeight: 300)
             .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
         case .none:

@@ -18,6 +18,9 @@
 		B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12F52B9B911F006ADCEE /* ThreadsView.swift */; };
 		B96D12F92B9B953D006ADCEE /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = B96D12F82B9B953D006ADCEE /* Pow */; };
 		B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12FB2B9B99C5006ADCEE /* Thread+Mocks.swift */; };
+		B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */; };
+		B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13002B9BAD2E006ADCEE /* Dependencies.swift */; };
+		B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadView.swift; sourceTree = "<group>"; };
 		B96D12F52B9B911F006ADCEE /* ThreadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsView.swift; sourceTree = "<group>"; };
 		B96D12FB2B9B99C5006ADCEE /* Thread+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+Mocks.swift"; sourceTree = "<group>"; };
+		B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		B96D13002B9BAD2E006ADCEE /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */,
+				B96D13002B9BAD2E006ADCEE /* Dependencies.swift */,
 				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
 				B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */,
+				B96D13022B9BAE49006ADCEE /* Components */,
 				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
+				B96D12FD2B9BAAC8006ADCEE /* Services */,
 				B96D12EC2B9B8BF9006ADCEE /* Models */,
 				B96D12FA2B9B99B9006ADCEE /* Mocks */,
 				B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */,
@@ -101,6 +110,22 @@
 				B96D12FB2B9B99C5006ADCEE /* Thread+Mocks.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B96D12FD2B9BAAC8006ADCEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B96D13022B9BAE49006ADCEE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +207,11 @@
 				B96D12F42B9B8E3B006ADCEE /* ThreadView.swift in Sources */,
 				B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */,
 				B96D12EE2B9B8C07006ADCEE /* Thread.swift in Sources */,
+				B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
+				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
+				B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */,
 				B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */,
 				B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */,
 				B96D12F22B9B8C5A006ADCEE /* Media.swift in Sources */,
