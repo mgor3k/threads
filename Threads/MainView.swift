@@ -4,7 +4,34 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        ThreadsView(threads: Thread.mocks)
+        // TODO: Make custom
+        TabView {
+            ThreadsView(threads: Thread.mocks)
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+
+            Color.blue
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                }
+
+            Color.yellow
+                .tabItem {
+                    Image(systemName: "square.and.pencil")
+                }
+
+            Color.red
+                .tabItem {
+                    Image(systemName: "heart")
+                }
+
+            Color.green
+                .tabItem {
+                    Image(systemName: "person")
+                }
+        }
+        .tint(.white)
     }
 }
 
