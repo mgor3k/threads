@@ -88,7 +88,7 @@ struct ThreadView: View {
                     ProgressView()
                 case .success(let image):
                     image.resizable().scaledToFit()
-                case .failure(let error):
+                case .failure:
                     Color.red
                 @unknown default:
                     Color.red

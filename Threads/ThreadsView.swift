@@ -20,6 +20,7 @@ struct ThreadsView: View {
                 }
             }
         }
+        .padding(.top, 1)
     }
 }
 
