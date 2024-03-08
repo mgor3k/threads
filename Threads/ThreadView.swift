@@ -4,10 +4,7 @@ import Pow
 import SwiftUI
 
 struct ThreadView: View {
-    let thread: Thread
-
-    // TODO: Temporarly
-    @State var isLiked = false
+    @ObservedObject var thread: Thread
 
     static let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -54,16 +51,17 @@ struct ThreadView: View {
                     Spacer()
 
                     Button {
-                        isLiked.toggle()
+                        thread.loggleLike()
                     } label: {
-                        Image(systemName: isLiked ? "heart.fill" : "heart")
-                            .foregroundStyle(isLiked ? .red : .gray)
+                        Label("\(thread.likeCount)", systemImage: thread.isLiked ? "heart.fill" : "heart")
+                            .foregroundStyle(thread.isLiked ? .red : .gray)
+                            .contentTransition(.numericText())
                     }
                     .changeEffect(
                       .spray(origin: UnitPoint(x: 0.25, y: 0.5)) {
                         Image(systemName: "heart.fill")
                           .foregroundStyle(.red)
-                      }, value: isLiked, isEnabled: isLiked)
+                      }, value: thread.isLiked, isEnabled: thread.isLiked)
 
                     Spacer()
                     Image(systemName: "paperplane")
