@@ -16,6 +16,7 @@
 		B96D12F22B9B8C5A006ADCEE /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12F12B9B8C5A006ADCEE /* Media.swift */; };
 		B96D12F42B9B8E3B006ADCEE /* ThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */; };
 		B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12F52B9B911F006ADCEE /* ThreadsView.swift */; };
+		B96D12F92B9B953D006ADCEE /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = B96D12F82B9B953D006ADCEE /* Pow */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96D12F92B9B953D006ADCEE /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,9 @@
 			dependencies = (
 			);
 			name = Threads;
+			packageProductDependencies = (
+				B96D12F82B9B953D006ADCEE /* Pow */,
+			);
 			productName = Threads;
 			productReference = B96D12DA2B9B8AAA006ADCEE /* Threads.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +139,9 @@
 				Base,
 			);
 			mainGroup = B96D12D12B9B8AAA006ADCEE;
+			packageReferences = (
+				B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = B96D12DB2B9B8AAA006ADCEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B96D12F82B9B953D006ADCEE /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B96D12D22B9B8AAA006ADCEE /* Project object */;
 }

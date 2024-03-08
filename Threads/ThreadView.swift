@@ -1,9 +1,13 @@
 //  Created by Maciej Gorecki on 08/03/2024.
 
+import Pow
 import SwiftUI
 
 struct ThreadView: View {
     let thread: Thread
+
+    // TODO: Temporarly
+    @State var isLiked = false
 
     static let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -48,7 +52,19 @@ struct ThreadView: View {
                     Spacer()
                     Image(systemName: "arrow.2.squarepath")
                     Spacer()
-                    Image(systemName: "heart")
+
+                    Button {
+                        isLiked.toggle()
+                    } label: {
+                        Image(systemName: isLiked ? "heart.fill" : "heart")
+                            .foregroundStyle(isLiked ? .red : .gray)
+                    }
+                    .changeEffect(
+                      .spray(origin: UnitPoint(x: 0.25, y: 0.5)) {
+                        Image(systemName: "heart.fill")
+                          .foregroundStyle(.red)
+                      }, value: isLiked, isEnabled: isLiked)
+
                     Spacer()
                     Image(systemName: "paperplane")
                     Spacer()
