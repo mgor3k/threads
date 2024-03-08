@@ -1,9 +1,4 @@
-//
-//  ThreadsApp.swift
-//  Threads
-//
 //  Created by Maciej Gorecki on 08/03/2024.
-//
 
 import SwiftUI
 
