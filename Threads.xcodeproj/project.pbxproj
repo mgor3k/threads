@@ -23,6 +23,7 @@
 		B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */; };
 		B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13072B9BB090006ADCEE /* ThreadsStore.swift */; };
 		B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */; };
+		B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImageView.swift; sourceTree = "<group>"; };
 		B96D13072B9BB090006ADCEE /* ThreadsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsStore.swift; sourceTree = "<group>"; };
 		B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsProvider.swift; sourceTree = "<group>"; };
+		B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
 				B96D13072B9BB090006ADCEE /* ThreadsStore.swift */,
 				B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */,
+				B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */,
 			);
 			path = Threads;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
 				B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */,
+				B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */,
 				B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */,
 				B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */,
 				B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */,

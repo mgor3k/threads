@@ -4,7 +4,7 @@ import Pow
 import SwiftUI
 
 struct ThreadView: View {
-    @Bindable var thread: Thread
+    @Bindable var thread: ThreadStore
 
     static let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -87,6 +87,8 @@ struct ThreadView: View {
 
 #Preview {
     ThreadView(
-        thread: .mocks[1]
+        thread: .init(
+            thread: .mocks[0]
+        )
     )
 }

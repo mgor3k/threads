@@ -5,7 +5,7 @@ import Foundation
 @Observable class ThreadsStore {
     enum State {
         case loading
-        case loaded([Thread])
+        case loaded([ThreadStore])
         case failure(Error)
     }
 
@@ -23,7 +23,8 @@ import Foundation
         Task { @MainActor in
             do {
                 let threads = try await provider.fetchThreads()
-                state = .loaded(threads)
+                let stores = threads.map(ThreadStore.init)
+                state = .loaded(stores)
             } catch {
                 state = .failure(error)
             }
