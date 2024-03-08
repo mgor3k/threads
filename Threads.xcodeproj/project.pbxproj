@@ -80,7 +80,6 @@
 				B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */,
 				B96D13002B9BAD2E006ADCEE /* Dependencies.swift */,
 				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
-				B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */,
 				B96D13022B9BAE49006ADCEE /* Components */,
 				B96D13052B9BB07B006ADCEE /* Features */,
 				B96D12FD2B9BAAC8006ADCEE /* Services */,
@@ -121,6 +120,7 @@
 		B96D12FD2B9BAAC8006ADCEE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */,
 				B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */,
 			);
 			path = Services;
@@ -137,6 +137,7 @@
 		B96D13052B9BB07B006ADCEE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B96D130E2B9BB527006ADCEE /* Thread */,
 				B96D13062B9BB081006ADCEE /* Threads */,
 			);
 			path = Features;
@@ -147,10 +148,17 @@
 			children = (
 				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
 				B96D13072B9BB090006ADCEE /* ThreadsStore.swift */,
-				B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */,
-				B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */,
 			);
 			path = Threads;
+			sourceTree = "<group>";
+		};
+		B96D130E2B9BB527006ADCEE /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */,
+				B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
