@@ -86,7 +86,6 @@
 				B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */,
 				B96D13002B9BAD2E006ADCEE /* Dependencies.swift */,
 				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
-				B96D13142B9BB6A0006ADCEE /* HomeView.swift */,
 				B96D13022B9BAE49006ADCEE /* Components */,
 				B96D13052B9BB07B006ADCEE /* Features */,
 				B96D12FD2B9BAAC8006ADCEE /* Services */,
@@ -145,6 +144,7 @@
 		B96D13052B9BB07B006ADCEE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B96D13162B9BB8C7006ADCEE /* Home */,
 				B96D130F2B9BB58F006ADCEE /* Profile */,
 				B96D130E2B9BB527006ADCEE /* Thread */,
 				B96D13062B9BB081006ADCEE /* Threads */,
@@ -176,6 +176,14 @@
 				B96D13102B9BB5A2006ADCEE /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B96D13162B9BB8C7006ADCEE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B96D13142B9BB6A0006ADCEE /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
