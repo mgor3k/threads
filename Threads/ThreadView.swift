@@ -4,7 +4,7 @@ import Pow
 import SwiftUI
 
 struct ThreadView: View {
-    @ObservedObject var thread: Thread
+    @Bindable var thread: Thread
 
     static let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()

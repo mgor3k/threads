@@ -2,7 +2,7 @@
 
 import Foundation
 
-class Thread: ObservableObject, Identifiable {
+@Observable class Thread: Identifiable {
     let id: String
     let author: Author
 
@@ -11,8 +11,8 @@ class Thread: ObservableObject, Identifiable {
     let body: String
     let media: Media?
 
-    @Published var isLiked: Bool
-    @Published var likeCount: Int
+    var isLiked: Bool
+    var likeCount: Int
 
     init(
         id: String,

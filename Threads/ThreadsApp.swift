@@ -8,7 +8,8 @@ struct ThreadsApp: App {
         imageFetcher: .live(
             imageCache: .init(),
             urlSession: .shared
-        )
+        ),
+        threadsProvider: .live
     )
 
     var body: some Scene {

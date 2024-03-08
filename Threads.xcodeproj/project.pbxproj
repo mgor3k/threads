@@ -21,6 +21,8 @@
 		B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */; };
 		B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13002B9BAD2E006ADCEE /* Dependencies.swift */; };
 		B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */; };
+		B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13072B9BB090006ADCEE /* ThreadsStore.swift */; };
+		B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		B96D12FE2B9BAAD7006ADCEE /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		B96D13002B9BAD2E006ADCEE /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedAsyncImageView.swift; sourceTree = "<group>"; };
+		B96D13072B9BB090006ADCEE /* ThreadsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsStore.swift; sourceTree = "<group>"; };
+		B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,7 @@
 				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
 				B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */,
 				B96D13022B9BAE49006ADCEE /* Components */,
-				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
+				B96D13052B9BB07B006ADCEE /* Features */,
 				B96D12FD2B9BAAC8006ADCEE /* Services */,
 				B96D12EC2B9B8BF9006ADCEE /* Models */,
 				B96D12FA2B9B99B9006ADCEE /* Mocks */,
@@ -126,6 +130,24 @@
 				B96D13032B9BAE55006ADCEE /* CachedAsyncImageView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B96D13052B9BB07B006ADCEE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B96D13062B9BB081006ADCEE /* Threads */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B96D13062B9BB081006ADCEE /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
+				B96D13072B9BB090006ADCEE /* ThreadsStore.swift */,
+				B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */,
+			);
+			path = Threads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +231,10 @@
 				B96D12EE2B9B8C07006ADCEE /* Thread.swift in Sources */,
 				B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
+				B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */,
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
+				B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */,
 				B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */,
 				B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */,
 				B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */,

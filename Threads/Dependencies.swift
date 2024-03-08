@@ -5,11 +5,13 @@ import SwiftUI
 
 struct Dependencies {
     let imageFetcher: ImageFetcher
+    let threadsProvider: ThreadsProvider
 }
 
 private struct DependenciesKey: EnvironmentKey {
     static let defaultValue: Dependencies = .init(
-        imageFetcher: .init(fetch: { _ in UIImage() })
+        imageFetcher: .init(fetch: { _ in UIImage() }),
+        threadsProvider: .init(fetchThreads: { [] })
     )
 }
 
