@@ -1,13 +1,8 @@
-//
-//  ContentView.swift
-//  Threads
-//
 //  Created by Maciej Gorecki on 08/03/2024.
-//
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +15,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }
