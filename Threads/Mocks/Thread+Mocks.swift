@@ -30,7 +30,7 @@ extension Thread {
                 author: authorApple,
                 creationDate: Date().addingTimeInterval(-800),
                 body: "some text longer lalalla lalsdlasldsal dla sdlasl dlal dlasdl asld lasld asldkaslk dalskd laskd laskd l",
-                media: nil,
+                media: .image(URL(string: "https://picsum.photos/id/237/200/300")!),
                 isLiked: false,
                 likeCount: 1
             ),

@@ -44,6 +44,8 @@ struct ThreadView: View {
 
                 Text(thread.body)
 
+                media
+
                 HStack {
                     Image(systemName: "bubble.right")
                     Spacer()
@@ -75,10 +77,33 @@ struct ThreadView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
+
+    @ViewBuilder
+    var media: some View {
+        switch thread.media {
+        case .image(let url):
+            AsyncImage(url: url) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                case .success(let image):
+                    image.resizable().scaledToFit()
+                case .failure(let error):
+                    Color.red
+                @unknown default:
+                    Color.red
+                }
+            }
+            .frame(maxHeight: 300)
+            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        case .none:
+            EmptyView()
+        }
+    }
 }
 
 #Preview {
     ThreadView(
-        thread: .mocks[0]
+        thread: .mocks[1]
     )
 }
