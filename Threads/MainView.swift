@@ -3,19 +3,13 @@
 import SwiftUI
 
 struct MainView: View {
-    @Environment(\.dependencies) var dependencies
-
     var body: some View {
         // TODO: Make custom
         TabView {
-            ThreadsView(
-                store: .init(
-                    provider: dependencies.threadsProvider
-                )
-            )
-            .tabItem {
-                Image(systemName: "house.fill")
-            }
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
 
             Color.blue
                 .tabItem {

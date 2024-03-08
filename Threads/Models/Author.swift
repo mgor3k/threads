@@ -2,7 +2,7 @@
 
 import Foundation
 
-struct Author {
+struct Author: Hashable {
     let username: String
     let imageURL: URL
 }

@@ -3,7 +3,12 @@
 import SwiftUI
 
 struct ThreadsView: View {
+    enum Action {
+        case profile(Author)
+    }
+
     @Bindable var store: ThreadsStore
+    let onAction: (Action) -> Void
 
     var body: some View {
         switch store.state {
@@ -14,9 +19,14 @@ struct ThreadsView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(threads) { thread in
-                        ThreadView(thread: thread)
-                            .padding(.horizontal)
-                            .padding(.vertical, 6)
+                        ThreadView(
+                            thread: thread,
+                            onProfile: {
+                                onAction(.profile($0))
+                            }
+                        )
+                        .padding(.horizontal)
+                        .padding(.vertical, 6)
 
                         Divider()
                             .overlay {
@@ -36,6 +46,7 @@ struct ThreadsView: View {
     ThreadsView(
         store: .init(
             provider: .live
-        )
+        ), 
+        onAction: { _ in }
     )
 }

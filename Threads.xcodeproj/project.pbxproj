@@ -24,6 +24,9 @@
 		B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13072B9BB090006ADCEE /* ThreadsStore.swift */; };
 		B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */; };
 		B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */; };
+		B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13102B9BB5A2006ADCEE /* ProfileView.swift */; };
+		B96D13132B9BB5CD006ADCEE /* Author+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13122B9BB5CD006ADCEE /* Author+Mock.swift */; };
+		B96D13152B9BB6A0006ADCEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D13142B9BB6A0006ADCEE /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		B96D13072B9BB090006ADCEE /* ThreadsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsStore.swift; sourceTree = "<group>"; };
 		B96D13092B9BB0AC006ADCEE /* ThreadsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsProvider.swift; sourceTree = "<group>"; };
 		B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadStore.swift; sourceTree = "<group>"; };
+		B96D13102B9BB5A2006ADCEE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B96D13122B9BB5CD006ADCEE /* Author+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+Mock.swift"; sourceTree = "<group>"; };
+		B96D13142B9BB6A0006ADCEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */,
 				B96D13002B9BAD2E006ADCEE /* Dependencies.swift */,
 				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
+				B96D13142B9BB6A0006ADCEE /* HomeView.swift */,
 				B96D13022B9BAE49006ADCEE /* Components */,
 				B96D13052B9BB07B006ADCEE /* Features */,
 				B96D12FD2B9BAAC8006ADCEE /* Services */,
@@ -113,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				B96D12FB2B9B99C5006ADCEE /* Thread+Mocks.swift */,
+				B96D13122B9BB5CD006ADCEE /* Author+Mock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 		B96D13052B9BB07B006ADCEE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B96D130F2B9BB58F006ADCEE /* Profile */,
 				B96D130E2B9BB527006ADCEE /* Thread */,
 				B96D13062B9BB081006ADCEE /* Threads */,
 			);
@@ -159,6 +168,14 @@
 				B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		B96D130F2B9BB58F006ADCEE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B96D13102B9BB5A2006ADCEE /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +258,12 @@
 				B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */,
 				B96D12EE2B9B8C07006ADCEE /* Thread.swift in Sources */,
 				B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */,
+				B96D13132B9BB5CD006ADCEE /* Author+Mock.swift in Sources */,
+				B96D13152B9BB6A0006ADCEE /* HomeView.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
 				B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */,
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
+				B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
 				B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */,
 				B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */,

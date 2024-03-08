@@ -5,6 +5,7 @@ import SwiftUI
 
 struct ThreadView: View {
     @Bindable var thread: ThreadStore
+    let onProfile: (Author) -> Void
 
     static let formatter: DateComponentsFormatter = {
         let formatter = DateComponentsFormatter()
@@ -29,6 +30,10 @@ struct ThreadView: View {
                 HStack {
                     Text(thread.author.username)
                         .bold()
+                        .onTapGesture {
+                            onProfile(thread.author)
+                        }
+
                     Text(Self.formatter.string(from: thread.creationDate, to: .now) ?? "")
                         .foregroundStyle(.gray)
                 }
@@ -89,6 +94,7 @@ struct ThreadView: View {
     ThreadView(
         thread: .init(
             thread: .mocks[0]
-        )
+        ), 
+        onProfile: { _ in }
     )
 }
