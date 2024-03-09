@@ -17,7 +17,7 @@ struct CachedAsyncImageView: View {
         ZStack {
             switch state {
             case .placeholder:
-                Color.gray
+                ProgressView()
                     .onAppear(perform: fetchImage)
             case .loaded(let image):
                 Image(uiImage: image)
