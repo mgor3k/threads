@@ -27,12 +27,18 @@ struct ThreadView: View {
             .clipShape(.circle)
 
             VStack(alignment: .leading, spacing: 6) {
-                HStack {
+                HStack(spacing: thread.author.isVerified ? 4 : 8) {
                     Text(thread.author.username)
                         .bold()
                         .onTapGesture {
                             onProfile(thread.author)
                         }
+
+                    if thread.author.isVerified {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.caption)
+                            .foregroundStyle(.blue)
+                    }
 
                     Text(Self.formatter.string(from: thread.creationDate, to: .now) ?? "")
                         .foregroundStyle(.gray)
@@ -93,8 +99,8 @@ struct ThreadView: View {
 #Preview {
     ThreadView(
         thread: .init(
-            thread: .mocks[0]
-        ), 
+            thread: .mocks[1]
+        ),
         onProfile: { _ in }
     )
 }

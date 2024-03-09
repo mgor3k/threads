@@ -6,12 +6,14 @@ extension Author {
     enum Mock {
         static let bigmac = Author(
             username: "@bigmac",
-            imageURL: URL(string: "https://i.pravatar.cc/150?img=3")!
+            imageURL: URL(string: "https://i.pravatar.cc/150?img=3")!,
+            isVerified: false
         )
 
         static let apple = Author(
             username: "@apple",
-            imageURL: URL(string: "https://i.pravatar.cc/150?img=4")!
+            imageURL: URL(string: "https://i.pravatar.cc/150?img=4")!,
+            isVerified: true
         )
     }
 }
