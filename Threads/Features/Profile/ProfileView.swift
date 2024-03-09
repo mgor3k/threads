@@ -28,6 +28,7 @@ struct ProfileView: View {
                         items: ProfileMenuItem.allCases,
                         selectedItem: $store.selectedMenuItem
                     )
+                    .scaleEffect(1)
                 }
             }
         }
