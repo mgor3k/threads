@@ -6,7 +6,7 @@ struct ProfileView: View {
     let author: Author
 
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
                 ProfileHeaderView(author: author)
                     .padding(.top)
