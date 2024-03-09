@@ -20,6 +20,7 @@ struct ThreadsApp: App {
                 .environment(\.dependencies, dependencies)
                 .onAppear {
                     configureNavigationBar()
+                    configureTabBar()
                 }
         }
     }
@@ -32,5 +33,13 @@ struct ThreadsApp: App {
         UINavigationBar.appearance().standardAppearance = navigationBarAppearance
         UINavigationBar.appearance().compactAppearance = navigationBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+    }
+
+    func configureTabBar() {
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+        UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
     }
 }

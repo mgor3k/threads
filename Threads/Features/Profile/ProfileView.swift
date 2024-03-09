@@ -13,9 +13,15 @@ struct ProfileView: View {
                     .padding(.horizontal)
 
                 Section {
-                    ForEach(1...10, id: \.self) { count in
-                        Text("Placeholder \(count)")
-                            .frame(height: 300)
+                    ForEach(store.selectedThreads) { thread in
+                        ThreadView(
+                            thread: thread,
+                            onProfile: { _ in
+//                                onAction(.profile($0))
+                            }
+                        )
+                        .padding(.horizontal)
+                        .padding(.vertical, 6)
                     }
                 } header: {
                     HorizontalMenuView(
