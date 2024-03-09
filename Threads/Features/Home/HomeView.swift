@@ -27,7 +27,9 @@ struct HomeView: View {
             .navigationDestination(for: Route.self) { route in
                 switch route {
                 case .profile(let author):
-                    ProfileView(author: author)
+                    NavigationBackButtonFix {
+                        ProfileView(author: author)
+                    }
                 }
             }
         }
