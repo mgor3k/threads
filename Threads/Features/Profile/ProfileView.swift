@@ -6,12 +6,21 @@ struct ProfileView: View {
     let author: Author
 
     var body: some View {
-        VStack {
-            ProfileHeaderView(author: author)
-                .padding(.top)
-                .padding(.horizontal)
-            
-            Spacer()
+        ScrollView {
+            LazyVStack(pinnedViews: [.sectionHeaders]) {
+                ProfileHeaderView(author: author)
+                    .padding(.top)
+                    .padding(.horizontal)
+
+                Section {
+                    ForEach(1...10, id: \.self) { count in
+                        Text("Placeholder \(count)")
+                            .frame(height: 300)
+                    }
+                } header: {
+                    HorizontalMenuView()
+                }
+            }
         }
     }
 }
