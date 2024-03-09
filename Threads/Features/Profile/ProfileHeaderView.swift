@@ -50,6 +50,17 @@ struct ProfileHeaderView: View {
 
             Text(author.bio)
                 .multilineTextAlignment(.leading)
+
+            HStack(spacing: 0) {
+                AvatarStackView(urls: author.followersAvatars)
+
+                Text("\(author.followersCount) followers")
+                    .font(.callout)
+                    .foregroundStyle(.gray)
+                    .offset(x: -14)
+
+                Spacer()
+            }
         }
     }
 }

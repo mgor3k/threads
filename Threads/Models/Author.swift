@@ -11,4 +11,7 @@ struct Author: Hashable {
     let imageURL: URL
 
     let isVerified: Bool
+
+    let followersAvatars: [URL]
+    let followersCount: Int
 }
