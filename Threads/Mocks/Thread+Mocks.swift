@@ -24,6 +24,15 @@ extension Thread {
                 isLiked: false,
                 likeCount: 1
             ),
+            Thread(
+                id: "3",
+                author: .Mock.apple,
+                creationDate: Date().addingTimeInterval(-1000),
+                body: "lorem ipsum",
+                media: nil,
+                isLiked: true,
+                likeCount: 9
+            ),
         ]
     }
 }

@@ -3,5 +3,6 @@
 import Foundation
 
 enum Media {
+    // TODO: Add aspect ratio
     case image(URL)
 }
