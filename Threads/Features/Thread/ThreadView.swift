@@ -23,7 +23,7 @@ struct ThreadView: View {
             CachedAsyncImageView(
                 url: thread.author.imageURL
             )
-            .frame(width: 44, height: 44)
+            .frame(width: 40, height: 40)
             .clipShape(.circle)
 
             VStack(alignment: .leading, spacing: 6) {

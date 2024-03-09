@@ -13,7 +13,7 @@ struct ThreadsView: View {
     var body: some View {
         switch store.state {
         case .loading:
-            ProgressView()
+            LoadingView()
                 .onAppear(perform: store.initialFetch)
         case .loaded(let threads):
             ScrollView {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B95B95152B9C489D009C2F53 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = B95B95142B9C489D009C2F53 /* Shimmer */; };
+		B95B95172B9C4907009C2F53 /* ThreadsView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95162B9C4907009C2F53 /* ThreadsView+Loading.swift */; };
+		B95B95192B9C49D3009C2F53 /* ThreadView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95182B9C49D3009C2F53 /* ThreadView+Loading.swift */; };
 		B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */; };
 		B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DF2B9B8AAA006ADCEE /* MainView.swift */; };
 		B96D12E22B9B8AAB006ADCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */; };
@@ -30,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B95B95162B9C4907009C2F53 /* ThreadsView+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreadsView+Loading.swift"; sourceTree = "<group>"; };
+		B95B95182B9C49D3009C2F53 /* ThreadView+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreadView+Loading.swift"; sourceTree = "<group>"; };
 		B96D12DA2B9B8AAA006ADCEE /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		B96D12DF2B9B8AAA006ADCEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95B95152B9C489D009C2F53 /* Shimmer in Frameworks */,
 				B96D12F92B9B953D006ADCEE /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				B96D12F52B9B911F006ADCEE /* ThreadsView.swift */,
+				B95B95162B9C4907009C2F53 /* ThreadsView+Loading.swift */,
 				B96D13072B9BB090006ADCEE /* ThreadsStore.swift */,
 			);
 			path = Threads;
@@ -166,6 +173,7 @@
 			children = (
 				B96D12F32B9B8E3B006ADCEE /* ThreadView.swift */,
 				B96D130B2B9BB3A9006ADCEE /* ThreadStore.swift */,
+				B95B95182B9C49D3009C2F53 /* ThreadView+Loading.swift */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			name = Threads;
 			packageProductDependencies = (
 				B96D12F82B9B953D006ADCEE /* Pow */,
+				B95B95142B9C489D009C2F53 /* Shimmer */,
 			);
 			productName = Threads;
 			productReference = B96D12DA2B9B8AAA006ADCEE /* Threads.app */;
@@ -235,6 +244,7 @@
 			mainGroup = B96D12D12B9B8AAA006ADCEE;
 			packageReferences = (
 				B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */,
+				B95B95132B9C489D009C2F53 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
 			);
 			productRefGroup = B96D12DB2B9B8AAA006ADCEE /* Products */;
 			projectDirPath = "";
@@ -274,9 +284,11 @@
 				B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
 				B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */,
+				B95B95192B9C49D3009C2F53 /* ThreadView+Loading.swift in Sources */,
 				B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */,
 				B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */,
 				B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */,
+				B95B95172B9C4907009C2F53 /* ThreadsView+Loading.swift in Sources */,
 				B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */,
 				B96D12F22B9B8C5A006ADCEE /* Media.swift in Sources */,
 			);
@@ -486,6 +498,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B95B95132B9C489D009C2F53 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.2;
+			};
+		};
 		B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/EmergeTools/Pow";
@@ -497,6 +517,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B95B95142B9C489D009C2F53 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B95B95132B9C489D009C2F53 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
+		};
 		B96D12F82B9B953D006ADCEE /* Pow */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B96D12F72B9B953D006ADCEE /* XCRemoteSwiftPackageReference "Pow" */;

@@ -21,6 +21,8 @@ import Foundation
         state = .loading
 
         Task { @MainActor in
+            try? await Task.sleep(for: .seconds(1))
+
             do {
                 let threads = try await provider.fetchThreads()
                 let stores = threads.map(ThreadStore.init)
