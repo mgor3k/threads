@@ -10,6 +10,7 @@
 		B95B95152B9C489D009C2F53 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = B95B95142B9C489D009C2F53 /* Shimmer */; };
 		B95B95172B9C4907009C2F53 /* ThreadsView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95162B9C4907009C2F53 /* ThreadsView+Loading.swift */; };
 		B95B95192B9C49D3009C2F53 /* ThreadView+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95182B9C49D3009C2F53 /* ThreadView+Loading.swift */; };
+		B95B951B2B9C65C7009C2F53 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B951A2B9C65C7009C2F53 /* ProfileHeaderView.swift */; };
 		B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */; };
 		B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DF2B9B8AAA006ADCEE /* MainView.swift */; };
 		B96D12E22B9B8AAB006ADCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		B95B95162B9C4907009C2F53 /* ThreadsView+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreadsView+Loading.swift"; sourceTree = "<group>"; };
 		B95B95182B9C49D3009C2F53 /* ThreadView+Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThreadView+Loading.swift"; sourceTree = "<group>"; };
+		B95B951A2B9C65C7009C2F53 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		B96D12DA2B9B8AAA006ADCEE /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		B96D12DF2B9B8AAA006ADCEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B96D13102B9BB5A2006ADCEE /* ProfileView.swift */,
+				B95B951A2B9C65C7009C2F53 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				B96D13132B9BB5CD006ADCEE /* Author+Mock.swift in Sources */,
 				B96D13152B9BB6A0006ADCEE /* HomeView.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
+				B95B951B2B9C65C7009C2F53 /* ProfileHeaderView.swift in Sources */,
 				B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */,
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
 				B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */,

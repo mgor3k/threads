@@ -6,7 +6,12 @@ struct ProfileView: View {
     let author: Author
 
     var body: some View {
-        Text(author.username)
+        VStack {
+            ProfileHeaderView(author: author)
+                .padding(.horizontal)
+            
+            Spacer()
+        }
     }
 }
 

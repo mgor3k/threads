@@ -3,7 +3,9 @@
 import Foundation
 
 struct Author: Hashable {
+    let name: String
     let username: String
+    
     let imageURL: URL
 
     let isVerified: Bool
