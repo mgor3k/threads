@@ -7,10 +7,14 @@ struct ThreadsProvider {
 }
 
 extension ThreadsProvider {
-    static var live: Self {
+    static func mock(delay: Duration? = nil) -> Self {
         .init(
             fetchThreads: {
-                Thread.mocks
+                if let delay {
+                    try await Task.sleep(for: delay)
+                }
+
+                return Thread.mocks
             }
         )
     }

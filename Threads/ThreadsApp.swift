@@ -9,7 +9,9 @@ struct ThreadsApp: App {
             imageCache: .init(),
             urlSession: .shared
         ),
-        threadsProvider: .live
+        threadsProvider: .mock(
+            delay: nil
+        )
     )
 
     var body: some Scene {

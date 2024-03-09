@@ -45,8 +45,8 @@ struct ThreadsView: View {
 #Preview {
     ThreadsView(
         store: .init(
-            provider: .live
-        ), 
+            provider: .mock()
+        ),
         onAction: { _ in }
     )
 }
