@@ -7,7 +7,7 @@ struct ProfileHeaderView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .top) {
                 Text(author.name)
                     .font(.title)
                     .bold()
@@ -19,6 +19,19 @@ struct ProfileHeaderView: View {
                 )
                 .frame(width: 80, height: 80)
                 .clipShape(Circle())
+                .overlay(alignment: .bottomLeading) {
+                    if author.isVerified {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.headline)
+                            .foregroundStyle(.blue)
+                            .padding(1)
+                            .background(
+                                Color.black
+                                    .clipShape(.circle)
+                            )
+                            .offset(x: 2, y: -2)
+                    }
+                }
             }
         }
     }
@@ -26,6 +39,6 @@ struct ProfileHeaderView: View {
 
 #Preview {
     ProfileHeaderView(
-        author: .Mock.bigmac
+        author: .Mock.apple
     )
 }

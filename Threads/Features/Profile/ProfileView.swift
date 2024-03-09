@@ -8,6 +8,7 @@ struct ProfileView: View {
     var body: some View {
         VStack {
             ProfileHeaderView(author: author)
+                .padding(.top)
                 .padding(.horizontal)
             
             Spacer()
