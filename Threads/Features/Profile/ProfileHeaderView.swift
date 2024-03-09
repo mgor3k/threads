@@ -6,11 +6,25 @@ struct ProfileHeaderView: View {
     let author: Author
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Text(author.name)
-                    .font(.title)
-                    .bold()
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(author.name)
+                        .font(.title)
+                        .bold()
+
+                    HStack {
+                        Text(author.username)
+
+                        Text("threads.net")
+                            .font(.caption)
+                            .foregroundStyle(.gray)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 6)
+                            .background(Color.gray.opacity(0.2))
+                            .clipShape(.rect(cornerRadius: 12, style: .continuous))
+                    }
+                }
 
                 Spacer()
 
@@ -33,6 +47,9 @@ struct ProfileHeaderView: View {
                     }
                 }
             }
+
+            Text(author.bio)
+                .multilineTextAlignment(.leading)
         }
     }
 }
