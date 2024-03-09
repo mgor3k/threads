@@ -3,12 +3,12 @@
 import SwiftUI
 
 struct ProfileView: View {
-    let author: Author
+    @State var store: ProfileStore
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
-                ProfileHeaderView(author: author)
+                ProfileHeaderView(author: store.author)
                     .padding(.top)
                     .padding(.horizontal)
 
@@ -27,6 +27,8 @@ struct ProfileView: View {
 
 #Preview {
     ProfileView(
-        author: .Mock.bigmac
+        store: .init(
+            author: .Mock.bigmac
+        )
     )
 }

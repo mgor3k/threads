@@ -28,7 +28,9 @@ struct HomeView: View {
                 switch route {
                 case .profile(let author):
                     NavigationBackButtonFix {
-                        ProfileView(author: author)
+                        ProfileView(
+                            store: .init(author: author)
+                        )
                     }
                 }
             }
