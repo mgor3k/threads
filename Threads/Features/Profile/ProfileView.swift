@@ -18,7 +18,10 @@ struct ProfileView: View {
                             .frame(height: 300)
                     }
                 } header: {
-                    HorizontalMenuView()
+                    HorizontalMenuView(
+                        items: ProfileMenuItem.allCases,
+                        selectedItem: $store.selectedMenuItem
+                    )
                 }
             }
         }

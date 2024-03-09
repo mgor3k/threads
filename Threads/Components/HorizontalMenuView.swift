@@ -2,20 +2,20 @@
 
 import SwiftUI
 
-struct HorizontalMenuView: View {
-    let items: [String] = [
-        "Threads",
-        "Replies",
-        "Reposts"
-    ]
+protocol HorizontalMenuItem: Identifiable, Equatable {
+    var menuTitle: String { get }
+}
+
+struct HorizontalMenuView<Item: HorizontalMenuItem>: View {
+    let items: [Item]
 
     @Namespace var namespace
-    @State var selectedItem = "Threads"
+    @Binding var selectedItem: Item
 
     var body: some View {
         HStack {
-            ForEach(items, id: \.self) { item in
-                Text(item)
+            ForEach(items) { item in
+                Text(item.menuTitle)
                     .foregroundStyle(
                         selectedItem == item ? .white : .gray
                     )
@@ -49,5 +49,16 @@ struct HorizontalMenuView: View {
 }
 
 #Preview {
-    HorizontalMenuView()
+    struct MockItem: HorizontalMenuItem {
+        let menuTitle: String
+        var id: String { menuTitle }
+    }
+
+    return HorizontalMenuView<MockItem>(
+        items: [
+            MockItem(menuTitle: "First"),
+            MockItem(menuTitle: "Second")
+        ],
+        selectedItem: .constant(MockItem(menuTitle: "First"))
+    )
 }

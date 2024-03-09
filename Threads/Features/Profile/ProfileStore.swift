@@ -5,6 +5,8 @@ import Foundation
 @Observable class ProfileStore {
     let author: Author
 
+    var selectedMenuItem: ProfileMenuItem = .threads
+
     init(author: Author) {
         self.author = author
     }
