@@ -19,6 +19,7 @@
 		B95B95292B9F3293009C2F53 /* OutlinedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95282B9F3293009C2F53 /* OutlinedButtonStyle.swift */; };
 		B95B952B2B9F32D1009C2F53 /* FilledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */; };
 		B95B952D2B9F342D009C2F53 /* ConditionalButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */; };
+		B95B95302B9F66CB009C2F53 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952F2B9F66CB009C2F53 /* Tab.swift */; };
 		B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */; };
 		B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DF2B9B8AAA006ADCEE /* MainView.swift */; };
 		B96D12E22B9B8AAB006ADCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		B95B95282B9F3293009C2F53 /* OutlinedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonStyle.swift; sourceTree = "<group>"; };
 		B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonStyle.swift; sourceTree = "<group>"; };
 		B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonModifier.swift; sourceTree = "<group>"; };
+		B95B952F2B9F66CB009C2F53 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		B96D12DA2B9B8AAA006ADCEE /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		B96D12DF2B9B8AAA006ADCEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,15 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		B95B952E2B9F66C3009C2F53 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
+				B95B952F2B9F66CB009C2F53 /* Tab.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		B96D12D12B9B8AAA006ADCEE = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +138,6 @@
 			children = (
 				B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */,
 				B96D13002B9BAD2E006ADCEE /* Dependencies.swift */,
-				B96D12DF2B9B8AAA006ADCEE /* MainView.swift */,
 				B95B95262B9F3284009C2F53 /* Styles */,
 				B96D13022B9BAE49006ADCEE /* Components */,
 				B96D13052B9BB07B006ADCEE /* Features */,
@@ -190,6 +200,7 @@
 		B96D13052B9BB07B006ADCEE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B95B952E2B9F66C3009C2F53 /* Root */,
 				B96D13162B9BB8C7006ADCEE /* Home */,
 				B96D130F2B9BB58F006ADCEE /* Profile */,
 				B96D130E2B9BB527006ADCEE /* Thread */,
@@ -331,6 +342,7 @@
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
 				B95B951D2B9C697D009C2F53 /* NavigationBackButtonFix.swift in Sources */,
 				B95B95252B9CF5FE009C2F53 /* ProfileMenuItem.swift in Sources */,
+				B95B95302B9F66CB009C2F53 /* Tab.swift in Sources */,
 				B95B952D2B9F342D009C2F53 /* ConditionalButtonModifier.swift in Sources */,
 				B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
