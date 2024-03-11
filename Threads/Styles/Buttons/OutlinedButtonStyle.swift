@@ -2,9 +2,10 @@
 
 import SwiftUI
 
-struct OutlineButtonStyle: ButtonStyle {
+struct OutlinedButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .bold()
             .opacity(
                 configuration.isPressed ? 0.7 : 1
             )
@@ -22,8 +23,8 @@ struct OutlineButtonStyle: ButtonStyle {
     }
 }
 
-extension ButtonStyle where Self == OutlineButtonStyle {
-    static var outline: Self {
+extension ButtonStyle where Self == OutlinedButtonStyle {
+    static var outlined: Self {
         return .init()
     }
 }

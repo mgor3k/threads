@@ -64,13 +64,15 @@ struct ProfileHeaderView: View {
 
             HStack {
                 Button(action: {}) {
-                    Text("Follow")
+                    Text(author.following.buttonTitle)
                         .frame(
                             maxWidth: .infinity,
                             maxHeight: .infinity
                         )
                 }
-                .buttonStyle(.outline)
+                .filledButtonWhen(
+                    author.following == .them || author.following == .none
+                )
 
                 Button(action: {}) {
                     Text("Mention")
@@ -79,14 +81,14 @@ struct ProfileHeaderView: View {
                             maxHeight: .infinity
                         )
                 }
-                .buttonStyle(.outline)
+                .buttonStyle(.outlined)
 
                 Button(action: {}) {
                     Image(systemName: "person.badge.plus")
                         .padding(.horizontal, 12)
                         .frame(maxHeight: .infinity)
                 }
-                .buttonStyle(.outline)
+                .buttonStyle(.outlined)
             }
             .frame(height: 40)
         }
@@ -98,4 +100,17 @@ struct ProfileHeaderView: View {
         author: .Mock.apple
     )
     .preferredColorScheme(.dark)
+}
+
+extension Author.Following {
+    var buttonTitle: String {
+        switch self {
+        case .them:
+            return "Follow Back"
+        case .you, .both:
+            return "Following"
+        case .none:
+            return "Follow"
+        }
+    }
 }

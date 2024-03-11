@@ -3,10 +3,11 @@
 import Foundation
 
 struct Author: Hashable {
-    enum Following {
+    enum Following: Equatable {
         case you
         case them
         case both
+        case none
     }
 
     let name: String
@@ -17,7 +18,7 @@ struct Author: Hashable {
     let imageURL: URL
 
     let isVerified: Bool
-    
+
     let following: Following
 
     let followersAvatars: [URL]

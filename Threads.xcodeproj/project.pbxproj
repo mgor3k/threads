@@ -16,7 +16,9 @@
 		B95B95212B9CF0D9009C2F53 /* HorizontalMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95202B9CF0D9009C2F53 /* HorizontalMenuView.swift */; };
 		B95B95232B9CF415009C2F53 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95222B9CF415009C2F53 /* ProfileStore.swift */; };
 		B95B95252B9CF5FE009C2F53 /* ProfileMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95242B9CF5FE009C2F53 /* ProfileMenuItem.swift */; };
-		B95B95292B9F3293009C2F53 /* OutlineButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95282B9F3293009C2F53 /* OutlineButtonStyle.swift */; };
+		B95B95292B9F3293009C2F53 /* OutlinedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95282B9F3293009C2F53 /* OutlinedButtonStyle.swift */; };
+		B95B952B2B9F32D1009C2F53 /* FilledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */; };
+		B95B952D2B9F342D009C2F53 /* ConditionalButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */; };
 		B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */; };
 		B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DF2B9B8AAA006ADCEE /* MainView.swift */; };
 		B96D12E22B9B8AAB006ADCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */; };
@@ -48,7 +50,9 @@
 		B95B95202B9CF0D9009C2F53 /* HorizontalMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuView.swift; sourceTree = "<group>"; };
 		B95B95222B9CF415009C2F53 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 		B95B95242B9CF5FE009C2F53 /* ProfileMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuItem.swift; sourceTree = "<group>"; };
-		B95B95282B9F3293009C2F53 /* OutlineButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineButtonStyle.swift; sourceTree = "<group>"; };
+		B95B95282B9F3293009C2F53 /* OutlinedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButtonStyle.swift; sourceTree = "<group>"; };
+		B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonStyle.swift; sourceTree = "<group>"; };
+		B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonModifier.swift; sourceTree = "<group>"; };
 		B96D12DA2B9B8AAA006ADCEE /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		B96D12DF2B9B8AAA006ADCEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -95,7 +99,9 @@
 		B95B95272B9F328D009C2F53 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				B95B95282B9F3293009C2F53 /* OutlineButtonStyle.swift */,
+				B95B95282B9F3293009C2F53 /* OutlinedButtonStyle.swift */,
+				B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */,
+				B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				B96D13132B9BB5CD006ADCEE /* Author+Mock.swift in Sources */,
 				B96D13152B9BB6A0006ADCEE /* HomeView.swift in Sources */,
 				B95B951F2B9CB6C0009C2F53 /* AvatarStackView.swift in Sources */,
+				B95B952B2B9F32D1009C2F53 /* FilledButtonStyle.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
 				B95B951B2B9C65C7009C2F53 /* ProfileHeaderView.swift in Sources */,
 				B96D13082B9BB090006ADCEE /* ThreadsStore.swift in Sources */,
@@ -324,6 +331,7 @@
 				B96D12F62B9B911F006ADCEE /* ThreadsView.swift in Sources */,
 				B95B951D2B9C697D009C2F53 /* NavigationBackButtonFix.swift in Sources */,
 				B95B95252B9CF5FE009C2F53 /* ProfileMenuItem.swift in Sources */,
+				B95B952D2B9F342D009C2F53 /* ConditionalButtonModifier.swift in Sources */,
 				B96D13112B9BB5A2006ADCEE /* ProfileView.swift in Sources */,
 				B96D13042B9BAE55006ADCEE /* CachedAsyncImageView.swift in Sources */,
 				B96D130A2B9BB0AC006ADCEE /* ThreadsProvider.swift in Sources */,
@@ -331,7 +339,7 @@
 				B96D130C2B9BB3A9006ADCEE /* ThreadStore.swift in Sources */,
 				B96D13012B9BAD2E006ADCEE /* Dependencies.swift in Sources */,
 				B96D12FC2B9B99C5006ADCEE /* Thread+Mocks.swift in Sources */,
-				B95B95292B9F3293009C2F53 /* OutlineButtonStyle.swift in Sources */,
+				B95B95292B9F3293009C2F53 /* OutlinedButtonStyle.swift in Sources */,
 				B95B95172B9C4907009C2F53 /* ThreadsView+Loading.swift in Sources */,
 				B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */,
 				B96D12F22B9B8C5A006ADCEE /* Media.swift in Sources */,
