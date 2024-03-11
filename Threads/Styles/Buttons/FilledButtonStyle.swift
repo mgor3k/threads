@@ -5,6 +5,7 @@ import SwiftUI
 struct FilledButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .font(.callout)
             .bold()
             .foregroundStyle(.black)
             .background(

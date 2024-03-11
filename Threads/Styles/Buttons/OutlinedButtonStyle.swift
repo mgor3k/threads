@@ -5,6 +5,7 @@ import SwiftUI
 struct OutlinedButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
+            .font(.callout)
             .bold()
             .opacity(
                 configuration.isPressed ? 0.7 : 1
