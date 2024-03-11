@@ -61,6 +61,34 @@ struct ProfileHeaderView: View {
 
                 Spacer()
             }
+
+            HStack {
+                Button(action: {}) {
+                    Text("Follow")
+                        .frame(
+                            maxWidth: .infinity,
+                            maxHeight: .infinity
+                        )
+                }
+                .buttonStyle(.outline)
+
+                Button(action: {}) {
+                    Text("Mention")
+                        .frame(
+                            maxWidth: .infinity,
+                            maxHeight: .infinity
+                        )
+                }
+                .buttonStyle(.outline)
+
+                Button(action: {}) {
+                    Image(systemName: "person.badge.plus")
+                        .padding(.horizontal, 12)
+                        .frame(maxHeight: .infinity)
+                }
+                .buttonStyle(.outline)
+            }
+            .frame(height: 40)
         }
     }
 }
@@ -69,4 +97,5 @@ struct ProfileHeaderView: View {
     ProfileHeaderView(
         author: .Mock.apple
     )
+    .preferredColorScheme(.dark)
 }

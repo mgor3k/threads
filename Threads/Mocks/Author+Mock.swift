@@ -10,6 +10,7 @@ extension Author {
             bio: "Some bio",
             imageURL: URL(string: "https://i.pravatar.cc/150?img=3")!,
             isVerified: false,
+            following: .them,
             followersAvatars: [
                 URL(string: "https://i.pravatar.cc/150?img=5")!,
                 URL(string: "https://i.pravatar.cc/150?img=6")!,
@@ -24,6 +25,7 @@ extension Author {
             bio: "Some bio\nNewline",
             imageURL: URL(string: "https://i.pravatar.cc/150?img=4")!,
             isVerified: true,
+            following: .both,
             followersAvatars: [
                 URL(string: "https://i.pravatar.cc/150?img=8")!,
                 URL(string: "https://i.pravatar.cc/150?img=9")!,

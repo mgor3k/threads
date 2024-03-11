@@ -3,6 +3,12 @@
 import Foundation
 
 struct Author: Hashable {
+    enum Following {
+        case you
+        case them
+        case both
+    }
+
     let name: String
     let username: String
 
@@ -11,6 +17,8 @@ struct Author: Hashable {
     let imageURL: URL
 
     let isVerified: Bool
+    
+    let following: Following
 
     let followersAvatars: [URL]
     let followersCount: Int
