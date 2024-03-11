@@ -6,6 +6,8 @@ struct MainView: View {
     @State var previousTab: Tab = .home
     @State var selectedTab: Tab = .home
 
+    @State var isCreatingPost = false
+
     var body: some View {
         TabView(selection: $selectedTab) {
             HomeView()
@@ -42,10 +44,14 @@ struct MainView: View {
         .onChange(of: selectedTab) {
             if selectedTab == Tab.newPost {
                 selectedTab = previousTab
+                isCreatingPost = true
                 return
             }
 
             previousTab = selectedTab
+        }
+        .sheet(isPresented: $isCreatingPost) {
+            NewThreadView()
         }
     }
 }

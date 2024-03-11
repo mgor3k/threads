@@ -20,6 +20,7 @@
 		B95B952B2B9F32D1009C2F53 /* FilledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */; };
 		B95B952D2B9F342D009C2F53 /* ConditionalButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */; };
 		B95B95302B9F66CB009C2F53 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B952F2B9F66CB009C2F53 /* Tab.swift */; };
+		B95B95332B9F68E1009C2F53 /* NewThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B95322B9F68E1009C2F53 /* NewThreadView.swift */; };
 		B96D12DE2B9B8AAA006ADCEE /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */; };
 		B96D12E02B9B8AAA006ADCEE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96D12DF2B9B8AAA006ADCEE /* MainView.swift */; };
 		B96D12E22B9B8AAB006ADCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B96D12E12B9B8AAB006ADCEE /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		B95B952A2B9F32D1009C2F53 /* FilledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonStyle.swift; sourceTree = "<group>"; };
 		B95B952C2B9F342D009C2F53 /* ConditionalButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonModifier.swift; sourceTree = "<group>"; };
 		B95B952F2B9F66CB009C2F53 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		B95B95322B9F68E1009C2F53 /* NewThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewThreadView.swift; sourceTree = "<group>"; };
 		B96D12DA2B9B8AAA006ADCEE /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96D12DD2B9B8AAA006ADCEE /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		B96D12DF2B9B8AAA006ADCEE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 				B95B952F2B9F66CB009C2F53 /* Tab.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		B95B95312B9F68D6009C2F53 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				B95B95322B9F68E1009C2F53 /* NewThreadView.swift */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 		B96D12D12B9B8AAA006ADCEE = {
@@ -200,6 +210,7 @@
 		B96D13052B9BB07B006ADCEE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B95B95312B9F68D6009C2F53 /* New */,
 				B95B952E2B9F66C3009C2F53 /* Root */,
 				B96D13162B9BB8C7006ADCEE /* Home */,
 				B96D130F2B9BB58F006ADCEE /* Profile */,
@@ -333,6 +344,7 @@
 				B96D12FF2B9BAAD7006ADCEE /* ImageFetcher.swift in Sources */,
 				B96D13132B9BB5CD006ADCEE /* Author+Mock.swift in Sources */,
 				B96D13152B9BB6A0006ADCEE /* HomeView.swift in Sources */,
+				B95B95332B9F68E1009C2F53 /* NewThreadView.swift in Sources */,
 				B95B951F2B9CB6C0009C2F53 /* AvatarStackView.swift in Sources */,
 				B95B952B2B9F32D1009C2F53 /* FilledButtonStyle.swift in Sources */,
 				B96D12F02B9B8C1D006ADCEE /* Author.swift in Sources */,
