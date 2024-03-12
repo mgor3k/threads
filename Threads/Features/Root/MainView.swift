@@ -51,7 +51,7 @@ struct MainView: View {
             previousTab = selectedTab
         }
         .sheet(isPresented: $isCreatingPost) {
-            NewThreadView()
+            NewThreadView(store: .init())
         }
     }
 }
